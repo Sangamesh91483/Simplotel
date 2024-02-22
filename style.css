@@ -1,0 +1,240 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar {
+    background-color:#ff7171;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    overflow: hidden;
+   
+}
+
+.navbar img {
+    height: 30px;
+    padding-top: 8px;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+/* Media query for tablet */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .navbar a {
+        padding: 10px 0; /* Reduce padding */
+        width: 100%; /* Full width */
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Change to column layout for mobile and tablet */
+    height: 100vh;
+}
+.container1{
+    display: flex;
+    flex-direction: column; /* Change to column layout for mobile and tablet */
+    height: 100vh;
+    background: linear-gradient(to right, #fff5af, #ffb5ed);
+  
+
+}
+
+.left, .right {
+    padding: 20px;
+}
+
+.left {
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    background: linear-gradient(to right, #fff5af, #ffd2d1);
+
+}
+
+.left h1 {
+    margin-bottom: -32px; /* Add space below the heading */
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding-left: 110px;
+    position: relative;
+    top: -19px;
+}
+
+.click-button {
+    background-color: #ff7171; /* Pink background color */
+    color: white; /* Text color */
+    /* Optional: Add rounded corners */
+    width: 200px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+.left pre {
+    text-align: justify; /* Justify the text in the <pre> tag */
+    font-weight: lighter;
+}
+
+.right {
+    flex: 1;
+    background-image: url('Right.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.LeftAllign {
+    position: relative;
+    top: -10px;
+}
+
+
+
+/* Media queries for tablet */
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Change back to row layout for tablet and larger screens */
+    }
+}
+
+/* Media queries for laptop/desktop */
+@media only screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row; /* Change back to row layout for tablet and larger screens */
+    }
+    .left, .right {
+        flex: 1; /* Equal width for both sections */
+    }
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.left1, .right1 {
+    flex: 1;
+}
+.left1 {
+  /* background: linear-gradient(to right, #fff5af, #ffd2d1); */
+  flex: 1; /* Take up 50% of the width */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  
+
+
+}
+
+.lpad{
+    flex-wrap: wrap;
+  padding-left: 180px;
+  padding-top: 100px;
+  margin: -57px;
+}
+.right1 {
+    /* background: linear-gradient(to right, #ffd2d1, #ffb5ed); */
+    flex: 1;
+  
+   
+}
+.left1 img{
+    width: 180px;
+    height: 180px;
+}
+.leftpad{
+    padding: 0px;
+}
+.arrow
+{
+    padding-left: 3px;
+    width: 22px;
+    margin-left: 5px;
+
+}
+.card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #ff7070;
+  width: 60%;
+}
+
+
+.small-card {
+  padding: 10px;
+  font-size: 14px;
+
+    position: relative;
+    top: 100px;
+}
+
+.card-link {
+
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-weight: lighter;
+  position: relative;
+   top: -11px;
+   left: 4px;
+}
+
+.light-text {
+ 
+  letter-spacing: 2px;
+  padding-right: 240px;
+letter-spacing: 2px;
+}
+/*  */
+.bold-text {
+font-weight: bold;
+letter-spacing: 4px;
+padding-right: 79px;
+font-size: 32px;
+font-family: sans-serif;
+}
+
+.start-align {
+  text-align: start; /* Align the content to the start (left) */
+  margin-top: 10px; /* Add some top margin for spacing */
+  padding-left: 15px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container1 {
+        flex-direction: row; /* Change back to row layout for tablet and larger screens */
+    }
+}
+
+/* Media queries for laptop/desktop */
+@media only screen and (min-width: 1024px) {
+    .container1 {
+        flex-direction: row; /* Change back to row layout for tablet and larger screens */
+    }
+    .left1, .right1 {
+        flex: 1; /* Equal width for both sections */
+    }
+}
